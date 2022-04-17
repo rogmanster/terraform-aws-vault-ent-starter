@@ -86,7 +86,7 @@ module "vm" {
   resource_name_prefix      = var.resource_name_prefix
   userdata_script           = module.user_data.vault_userdata_base64_encoded
   user_supplied_ami_id      = var.user_supplied_ami_id
-  #vault_lb_sg_id            = module.loadbalancer.vault_lb_sg_id
+  vault_lb_sg_id            = module.loadbalancer.vault_lb_sg_id
   vault_subnets             = module.networking.vault_subnet_ids
   vault_target_group_arn    = module.loadbalancer.vault_target_group_arn
   vpc_id                    = module.networking.vpc_id
