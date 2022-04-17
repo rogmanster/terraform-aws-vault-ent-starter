@@ -60,10 +60,10 @@ variable "user_supplied_ami_id" {
   default     = null
 }
 
-variable "vault_lb_sg_id" {
-  type        = string
-  description = "Security group ID of Vault load balancer"
-}
+#variable "vault_lb_sg_id" {
+#  type        = string
+#  description = "Security group ID of Vault load balancer"
+#}
 
 variable "vault_subnets" {
   type        = list(string)
