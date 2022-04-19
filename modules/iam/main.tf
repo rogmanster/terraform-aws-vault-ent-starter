@@ -36,6 +36,8 @@ data "aws_iam_policy_document" "cloud_auto_join" {
 
     actions = [
       "ec2:DescribeInstances",
+      "autoscaling:Describe*",   #~Added to getch instance IPs using AWS cli for prometheus.yml
+
     ]
 
     resources = ["*"]
