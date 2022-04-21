@@ -157,6 +157,7 @@ variable "block_device_mappings" {
       snapshot_id           = string
       volume_size           = number
       volume_type           = string
+      throughput            = number
     })
   }))
 
